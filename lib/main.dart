@@ -1,12 +1,6 @@
 import 'package:flutter/material.dart';
 
-import './data/api.dart';
-import './data/music.dart';
-
-import './screen/controller.dart';
-import './screen/info.dart';
 import './screen/playlist.dart';
-
 
 void main() {
   runApp(const MyApp());
@@ -18,6 +12,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(
+        brightness: Brightness.light,
+      ),
+      darkTheme: ThemeData(
+        brightness: Brightness.dark,
+      ),
+
       home: const MusicListPage(),
     );
   }

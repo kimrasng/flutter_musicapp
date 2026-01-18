@@ -29,7 +29,7 @@ class MusicList {
       "foreign_title": title,
       "artist_name": artist,
       "filename": musicurl,
-      "image_filename": imgurl,
+      "image_sfilename": imgurl,
     };
   }
 }
