@@ -7,7 +7,7 @@ class Playlist extends StatelessWidget {
 		return SizedBox(
       child: Column(
         children: const [
-          Text('Playlist Compssssonent'),
+          Text('Playlist Compsonent'),
         ],
       ),
 		);
