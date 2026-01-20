@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import './screen/info.dart';
 import './screen/playlist.dart';
 
 void main() {
@@ -11,6 +12,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
     return MaterialApp(
       theme: ThemeData(
         brightness: Brightness.light,
@@ -18,7 +20,6 @@ class MyApp extends StatelessWidget {
       darkTheme: ThemeData(
         brightness: Brightness.dark,
       ),
-
       home: const MusicListPage(),
     );
   }
@@ -30,12 +31,14 @@ class MusicListPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-          // Info(),
-          Playlist(),
-          // Controller(),
-        ],
+      body: SafeArea(
+        child: Column(
+          children: [
+            Info(),
+            Playlist(),
+            // Controller(),
+          ],
+        ),
       ),
     );
   }

@@ -26,10 +26,10 @@ class Playlist extends StatelessWidget {
                 leading: ClipRRect(
                   borderRadius: BorderRadius.circular(5),
                   child: Image.network(
-                  m.imgurl,
-                  width: 48,
-                  height: 48,
-                  fit: BoxFit.cover,
+                    m.imgurl,
+                    width: 48,
+                    height: 48,
+                    fit: BoxFit.cover,
                   ),
                 ),
                 title: Text(m.title),
